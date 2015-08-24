@@ -5,7 +5,7 @@ body, html {
     padding: 0;
     width: 100%;
     position: relative;
-    color: white;
+    color: #FF6666;
     font-family: 'San Francisco Display', sans-serif;
     background-image: url("/images/hero_new.jpg");
     -webkit-background-size: cover;
@@ -15,12 +15,7 @@ body, html {
     background-repeat: no-repeat;
 }
 
-#container {
-    margin: 0 auto;
-    top: 50px;
-    width: 960px;
-    position: relative;
-}
+
 
 main {
     padding: 20px;
@@ -31,7 +26,7 @@ main h1 {
     line-height: 1em;
     font-size: 2.3em;
     margin: 5px 0;
-        font-size: 58px;
+    font-size: 58px;
     font-weight: 400;
 }
 
@@ -41,15 +36,15 @@ main h2 {
 }
 
 header {
-    background: #0E033B;
-    color: white;
+    background: #FF66CC;
+    color: #FF6666;
 }
 
 #userInfo {
     height: 100%;
     left: 0;
     font-size: 12px;
-    color: white;
+    color: #FF6666;
     width: 300px;
 }
 
@@ -59,11 +54,11 @@ header {
 }
 
 #userInfo span a {
-    color: white;
+    color: #FF6666;
 }
 
 nav {
-    background: #009688;
+    background: #FF6666;
     position: fixed;
     width: fixed;
     left: 0;
@@ -80,19 +75,19 @@ nav ul {
     margin: 0;
     float: right;
     margin-left: 0px;
-    border-right: 1px solid #00897B;
+    border-right: 1px solid #FF6666;
     font-size: 0;
 }
 
 nav ul li {
     display: inline-block;
     font-size: 1em;
-    border-left: 1px solid #00897B;
+    border-left: 1px solid #FF6666;
     margin: 0;
 }
 
 nav ul li:hover {
-    background: #00897B;
+    background: #FF6666;
 }
 
 nav ul li a {
@@ -113,7 +108,7 @@ nav ul li a {
 #userForm {
     position: relative;
     width: 16%;
-    background: #009688;
+    background: #000000;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 30px;
@@ -127,32 +122,32 @@ nav ul li a {
 
 #newArticle {
     position: relative;
-    background: #009688;
+    background: #FF6666;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 30px;
     padding: 10px;
-    border: 1px solid #00695C;
+    border: 1px solid #FF6666;
 }
 
 .errorList {
-    background: #FFA193;
-    border: solid 2px #CF0000;
+    background: #FF6666;
+    border: solid 2px #FF6666;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 .success {
-    background: #81FF57;
-    border: solid 2px #2B541D;
+    background: #FF6666;
+    border: solid 2px #FF6666;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 article {
-    background: #009688;
+    background: #FF6666;
     padding: 10px;
-    border: 1px solid #00695C;
+    border: 1px solid #FF6666;
 }
 
 article h1 {
@@ -163,7 +158,7 @@ article h1 {
     width: 800px;
     width: auto;
     margin: 0 auto;
-    background: #009688;
+    background: #FF6666;
 }
 
 /* Userlist styling */
@@ -185,7 +180,7 @@ article h1 {
 #userListData td span, #userListData td a {
     margin-left: 5px;
 tr th {
-    background: #0E033B;
+    background: #FF6666;
     color: #ffffff;
 }
 
@@ -200,24 +195,24 @@ td * {
 }
 
 td form input[type=submit] {
-    background: #FF4242;
-    border-top: #FF8A8A 2px solid;
-    border-left: #FF8A8A 2px solid;
-    border-bottom: #8A0000 2px solid;
-    border-right: #8A0000 2px solid;
+    background: #FF6666;
+    border-top: #FF6666 2px solid;
+    border-left: #FF6666 2px solid;
+    border-bottom: #FF6666 2px solid;
+    border-right: #FF6666 2px solid;
     padding: 2px 0;
     color: white;
     border-radius: 5px;
 }
 
 td form input[type=submit]:hover {
-    background: #FF2121;
+    background: #FF6666;
 }
 
 td form select {
-    background: blue;
+    background: #FF6666;
 }
 
 td form select option {
-    background: green;
+    background: #FF6666;
 } 
