@@ -19,8 +19,8 @@ include_once 'includes/getPage.php';
 </head>
 <body>
 <header>
-    <a href="contact.php">Contact</a>
     <a href="index.php">Home</a>
+    <a href="contact.php">Contact</a>
 </header>
 <h1>
     <?php // echo contact title ?>
