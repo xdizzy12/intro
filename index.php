@@ -23,26 +23,27 @@ Page2_content
 
  */
 
+// include core functions
+include_once 'includes/core.php';
 include_once 'includes/getPage.php';
 
-$contact = getPage('page');
 
 ?>
 
 <html>
 <head>
-    <title><?php // echo index title ?></title>
+    <title><?=$home['title']?></title>
 </head>
 <body>
 <header>
-    <a href="contact.php">Contact</a>
-    <a href="index.php">Home</a>
+    <a href="index.php"><?=$home['title']?></a>
+    <a href="contact.php"><?=$contact['title']?></a>
 </header>
 <h1>
-    <?php // echo index title ?>
+    <?=$home['title']?>
 </h1>
 <section>
-    <?php // echo index content ?>
+    <?=$home['content']?>
 </section>
 </body>
 </html>

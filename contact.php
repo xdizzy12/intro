@@ -6,7 +6,10 @@
  * Time: 11:23
  */
 
+// include core functions
+include_once 'includes/core.php';
 include_once 'includes/getPage.php';
+
 
 ?>
 
