@@ -15,12 +15,7 @@ body, html {
     background-repeat: no-repeat;
 }
 
-#container {
-    margin: 0 auto;
-    top: 50px;
-    width: 960px;
-    position: relative;
-}
+
 
 main {
     padding: 20px;
