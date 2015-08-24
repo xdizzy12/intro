@@ -15,7 +15,12 @@ body, html {
     background-repeat: no-repeat;
 }
 
-
+#container {
+    margin: 0 auto;
+    top: 50px;
+    width: 960px;
+    position: relative;
+}
 
 main {
     padding: 20px;
@@ -108,7 +113,7 @@ nav ul li a {
 #userForm {
     position: relative;
     width: 16%;
-    background: #000000;
+    background: #ffffff;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 30px;
