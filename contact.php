@@ -8,25 +8,22 @@
 
 // include core functions
 include_once 'includes/core.php';
-include_once 'includes/getPage.php';
 
 
 ?>
 
 <html>
 <head>
-    <title><?php // echo contact title ?></title>
+    <title><?=$contact['title']?></title>
+    <meta charset="utf-8">
 </head>
 <body>
-<header>
-    <a href="contact.php">Contact</a>
-    <a href="index.php">Home</a>
-</header>
+<?php include_once 'views/header.php'; ?>
 <h1>
-    <?php // echo contact title ?>
+    <?=$contact['title']?>
 </h1>
 <section>
-    <?php // echo contact content ?>
+    <?=$contact['content']?>
 </section>
 </body>
 </html>

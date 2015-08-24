@@ -25,20 +25,16 @@ Page2_content
 
 // include core functions
 include_once 'includes/core.php';
-include_once 'includes/getPage.php';
-
 
 ?>
 
 <html>
 <head>
     <title><?=$home['title']?></title>
+    <meta charset="utf-8">
 </head>
 <body>
-<header>
-    <a href="index.php"><?=$home['title']?></a>
-    <a href="contact.php"><?=$contact['title']?></a>
-</header>
+<?php include_once 'views/header.php'; ?>
 <h1>
     <?=$home['title']?>
 </h1>
