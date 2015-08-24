@@ -25,6 +25,7 @@ Page2_content
 
 include_once 'includes/getPage.php';
 
+$contact = getPage('page');
 
 ?>
 
