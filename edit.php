@@ -40,6 +40,7 @@ if(isset($_POST['title']) && isset($_POST['content'])) {
 <head>
     <title>Pagina's bewerken</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <?php include_once 'views/header.php'; ?>

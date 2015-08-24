@@ -5,7 +5,7 @@ body, html {
     padding: 0;
     width: 100%;
     position: relative;
-    color: #FFFFFF;
+    color: #000;
     font-family: 'San Francisco Display', sans-serif;
     background-image: url("/images/hero_new.jpg");
     -webkit-background-size: cover;
@@ -222,4 +222,8 @@ td form select {
 
 td form select option {
     background: #FF6666;
-} 
+}
+
+a:link {
+    color: #000000;
+}
