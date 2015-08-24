@@ -16,10 +16,7 @@ if(isset($_POST['username'], $_POST['password1'], $_POST['password2'])) {
     $username   = $_POST['username'];
     $password1  = $_POST['password1'];
     $password2  = $_POST['password2'];
-
-    // validation - if < 1 then the validation procession will fail
-    $validation = 1;
-
+}
     // username validation
     if(empty($username)){
         array_push($errorList, "<li>Naam mag niet leeg zijn</li>");
