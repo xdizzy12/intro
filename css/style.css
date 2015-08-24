@@ -5,7 +5,7 @@ body, html {
     padding: 0;
     width: 100%;
     position: relative;
-    color: #FF6666;
+    color: #FFFFFF;
     font-family: 'San Francisco Display', sans-serif;
     background-image: url("/images/hero_new.jpg");
     -webkit-background-size: cover;
@@ -15,7 +15,12 @@ body, html {
     background-repeat: no-repeat;
 }
 
-
+#container {
+    margin: 0 auto;
+    top: 50px;
+    width: 960px;
+    position: relative;
+}
 
 main {
     padding: 20px;
@@ -28,11 +33,13 @@ main h1 {
     margin: 5px 0;
     font-size: 58px;
     font-weight: 400;
+    color: #FF6666;
 }
 
 main h2 {
     text-align: center;
     margin: 5px 0 20px 0;
+    color: #FF6666;
 }
 
 header {
@@ -107,12 +114,12 @@ nav ul li a {
 
 #userForm {
     position: relative;
-    width: 16%;
-    background: #000000;
+    width: 20%;
+    background: #FF6666;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 30px;
-    padding: 10px;
+    padding: 20px;
 }
 
 #userForm input {
