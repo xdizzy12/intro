@@ -1,25 +1,46 @@
-<html><head>
+<?php
+
+// include core functions
+include_once 'includes/core.php';
+
+if(isset($_POST['name'], $_POST['pass'])){
+    $SQL = "SELECT * FROM users WHERE name = :name AND pass = :pass";
+    $sth = $dbh->prepare($SQL);
+    $sth->bindParam(":name", $_POST['name']);
+    $sth->bindParam(":pass", $_POST['pass']);
+    $sth->execute();
+    $results = $sth->fetch();
+
+    if (!is_null($results)) {
+        $_SESSION['name'] = $_POST['name'];
+        header('Location: index.php');
+    } else {
+        $fail = TRUE;
+    }
+}
+?>
+
+<html>
+<head>
     <title>Inloggen</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-<style type="text/css"></style></head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
 <body>
-
-<header>
-    <!-- Header is only shown when user is logged in -->
-    </header>
-<div id="container">
-    <main>
-<!-- Error list -->
-<h1>Welkom!</h1>
-<h2>Om verder te gaan moet u inloggen</h2>
-<!-- Login form -->
-<form action="" method="post" id="userForm">
-    <label for="loginUsername">Naam: </label><input type="text" name="username" id="loginUsername">
-    <label for="loginPassword">Wachtwoord: </label><input type="password" name="password" id="loginPassword">
-    <input type="submit" value="Inloggen">
+<?php include_once 'views/header.php'; ?>
+<h1>
+    Inloggen
+</h1>
+<!-- login -->
+<?php if(isset($fail)){ ?>
+    <div id="fail">Geen toegang</div>
+<?php } ?>
+<form method="post">
+    <label for="name">Naam:</label>
+    <input type="text" name="name" id="name">
+    <label for="pass">Passwoord:</label>
+    <input type="text" name="pass" id="pass">
+    <input type="submit" value="Registreren">
 </form>
-
-</main>
-</div>
-
-</body></html>
+</body>
+</html>
